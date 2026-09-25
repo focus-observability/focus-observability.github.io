@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>What Your Policy Cannot See: Robot Data Curation via Observability Estimation</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 18px 28px 64px;
+      color: #111;
+      background: #fff;
+      font-family: "Times New Roman", Times, serif;
+    }
+    h1 {
+      margin: 0 0 42px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-variant: small-caps;
+      letter-spacing: .035em;
+      line-height: 1.1;
+    }
+    .authors {
+      margin: 0 0 66px 12px;
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 1.15;
+    }
+    h2 {
+      margin: 0 0 34px;
+      font-size: 1.7rem;
+      font-variant: small-caps;
+      font-weight: normal;
+      text-align: center;
+    }
+    .abstract {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.35rem;
+      line-height: 1.24;
+      text-align: justify;
+      hyphens: auto;
+    }
+    @media (max-width: 600px) {
+      body { padding: 20px 18px 48px; }
+      h1 { margin-bottom: 32px; }
+      .authors { margin: 0 0 48px; font-size: 1.1rem; }
+      h2 { margin-bottom: 24px; }
+      .abstract { font-size: 1.12rem; text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>What Your Policy Cannot See: Robot Data Curation via Observability Estimation</h1>
+    <p class="authors">Anonymous authors<br>Paper under double-blind review</p>
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p class="abstract">Robot imitation learning performance depends critically on the quality of demonstration data. Even a successful demonstration can provide ambiguous visual information when its recorded observations omit action-relevant information. Existing robot data curation methods do not directly assess whether observations contain sufficient information for action selection. We introduce FOCUS, an information-theoretic framework for quantifying visual observability in offline robot demonstrations, defined as the extent to which visual observations contain the action-relevant information needed to determine an appropriate action. Our key idea is to test whether an auxiliary observation provides information about the demonstration action beyond what is contained in the visual observation. We instantiate this idea using conditional mutual information between the auxiliary observation and actions conditioned on the visual observations. We use the resulting observability scores to rank demonstrations, filter those with low visual observability, and train imitation learning policies on the retained data. Empirically, our observability scores align with human judgments of visual observability, and filtering demonstrations using these scores improves downstream imitation learning performance.</p>
+    </section>
+  </main>
+</body>
+</html>
